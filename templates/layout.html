@@ -4,6 +4,14 @@
         <title>StepsAfter</title>
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Tether -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script>
+            $("[data-toggle=popover]").popover();
+        </script>
     </head>
     <body>
         <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
@@ -24,10 +32,7 @@
                   <a class="nav-link" href="/facilities">Facilities <span class="badge badge-pill badge-danger">New</span></a>
                 </li>
               </ul>
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" disabled>
-                <button class="btn btn-outline-secondary my-2 my-sm-0 disabled" type="submit">Search</button>
-              </form>
+            <button type="button" class="btn btn-outline-secondary bg-danger active">(424) 297-5085</button>
             </div>
           </nav>
         </nav>
