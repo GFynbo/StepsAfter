@@ -3,18 +3,25 @@
 <div class="container main-page">
     <div class="row">
         <div class="col-md-8">
-            <h1 class="display-3">Welcome to StepsAfter!</h1>
+            <h1 class="display-3">StepsAfter</h1>
             <hr class="md-4">
             <p class="lead">This website is intended to help the families and friends of people who suffer from substance abuse and addiction.</p>
+            <p>Substance abuse can be an uncomfortable subject for many and leads to countless deaths in the United States every year. Our goal at StepsAfter is aimed at helping families and friends of substance abusers who have overdosed or are at risk of overdosing.</p>
+            <p>The graph below highlights the crossover between dependence and harm that various substances can cause you.</p>
+            <img src="{{ url_for('static', filename='images/drugs.svg') }}" height="400px" width="400px">
+            <p>Drugs are not only addictive and dustructive to individual's life, but also to the life of his/her friends and family. We offer small amounts of advice with large resources on how to cope with addiction and where to find help. You can find all of our resources at the link below.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/after-an-od" role="button">Next steps</a>
+            </p>
         </div>
         <div class="col-md-4">
-            <p>It is currently under construction, but is partially functional.</p>
+            <p>The website is currently under construction, but is partially functional. Use the button below to learn more about the steps ahead of you.</p>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 20%; height: 25px;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 50%; height: 25px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <hr class="my-4">
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Next steps</a>
+                <a class="btn btn-primary btn-lg" href="/after-an-od" role="button">Next steps</a>
             </p>
         </div>
     </div>

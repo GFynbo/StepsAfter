@@ -1,6 +1,11 @@
+import googlemaps
 from flask import Flask, render_template, request, url_for
+from datetime import datetime
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+db = SQLAlchemy(app)
 
 @app.route('/')
 def home():

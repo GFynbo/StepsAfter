@@ -10,7 +10,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="/">StepsAfter</a>
+            <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/feet.svg') }}" height=50 width=100 style="-webkit-filter: invert(100%);"> After</a>
 
             <div class="navbar-collapse collapse show" id="navbarColor02" aria-expanded="true">
               <ul class="navbar-nav mr-auto">
@@ -21,7 +21,7 @@
                   <a class="nav-link" href="/after-an-od">After an OD</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Facilities <span class="badge badge-pill badge-danger">New</span></a>
+                  <a class="nav-link" href="/facilities">Facilities <span class="badge badge-pill badge-danger">New</span></a>
                 </li>
               </ul>
               <form class="form-inline">
@@ -32,5 +32,11 @@
           </nav>
         </nav>
         {% block body %}{% endblock %}
+        <!-- need to fix positioning -->
+        <!-- <footer class="footer footer-fixed-bottom">
+          <div class="container">
+            <span class="text-muted">&copy; StepsAfter.org 2017</span>
+          </div>
+        </footer> -->
     </body>
 </html>
