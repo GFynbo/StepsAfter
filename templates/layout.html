@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>StepsAfter</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">StepsAfter</a>
+
+            <div class="navbar-collapse collapse show" id="navbarColor02" aria-expanded="true">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/after-an-od">After an OD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Facilities <span class="badge badge-pill badge-danger">New</span></a>
+                </li>
+              </ul>
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" disabled>
+                <button class="btn btn-outline-secondary my-2 my-sm-0 disabled" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </nav>
+        {% block body %}{% endblock %}
+    </body>
+</html>
