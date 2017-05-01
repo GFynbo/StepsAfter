@@ -1,4 +1,4 @@
-#!/Users/Gavin/Desktop/stepsafter/bin/python
+#!/Users/Gavin/Desktop/StepsAfter/bin/python
 
 import sys
 import getopt
