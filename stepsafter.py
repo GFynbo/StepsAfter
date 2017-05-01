@@ -31,7 +31,7 @@ def index():
     from_number = request.values.get('Body', None)
     if from_number in "erEREreR":
         resp = MessagingResponse() #creates object
-        resp.message("STEP 1: CALL FOR HELP (DIAL 911).  \n STEP 2: CHECK FOR SIGNS OF OPIOID OVERDOSE. \n STEP 3: SUPPORT THE PERSON’S BREATHING. \n STEP 4: ADMINISTER NALOXONE. \n STEP 5: MONITOR THE PERSON’S RESPONSE.") #creates what to say
+        resp.message("STEP 1: CALL FOR HELP (DIAL 911).  \n STEP 2: CHECK FOR SIGNS OF OPIOID OVERDOSE. \n STEP 3: SUPPORT THE PERSON'S BREATHING. \n STEP 4: ADMINISTER NALOXONE. \n STEP 5: MONITOR THE PERSON'S RESPONSE.") #creates what to say
         return str(resp)
     if from_number in "seek help":
         resp = MessagingResponse()
@@ -43,4 +43,4 @@ def index():
         return str(resp)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
