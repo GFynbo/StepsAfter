@@ -3,30 +3,30 @@ from datetime import datetime
 # from twilio.twiml.messaging_response import MessagingResponse
 # from twilio.rest import Client
 
-app = Flask(__name__)
+application = Flask(__name__)
 # Find these values at https://twilio.com/user/account
 # account_sid = "ACe5b4d18c96e93c3bc1053febe0331474"
 # auth_token = "fcaea4bd6d12c9eab24d5c1e5a818b12"
 # client = Client(account_sid, auth_token)
 
 
-@app.route('/')
+@application.route('/')
 def home():
     return render_template('home.html')
 
-@app.route('/after-an-od')
+@application.route('/after-an-od')
 def after_an_od():
     return render_template('after-an-od.html')
 
-@app.route('/facilities')
+@application.route('/facilities')
 def facilities():
     return render_template('facilities.html')
 
-@app.route('/help')
+@application.route('/help')
 def hello():
     return 'Text (424) 297-5085 for immediate instructions on dealing with an overdose.'
 
-# @app.route("/sms", methods = ['GET', 'POST'])
+# @application.route("/sms", methods = ['GET', 'POST'])
 # def index():
 #     from_number = request.values.get('Body', None)
 #     if from_number in "erEREreR":
@@ -43,4 +43,4 @@ def hello():
 #         return str(resp)
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    application.run()
